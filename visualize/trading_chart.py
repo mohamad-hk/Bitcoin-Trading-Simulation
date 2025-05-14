@@ -15,10 +15,10 @@ def draw_chart():
     buy_day = find_name_of_day(number_buy_day)
     sell_day = find_name_of_day(number_sell_day)
 
-    plt.plot(df["date"], df["amount"], label="Total amount", color="blue")
-    plt.axhline(1000, color='gray', linestyle='--', label="Initial Amount")
+    plt.plot(df["date"], df["amount"], label="Total investment", color="blue")
+    plt.axhline(1000, color='gray', linestyle='--', label="Initial investment")
 
-    text = f"If you buy on {buy_day} ({number_buy_day}), sell on {sell_day} ({number_sell_day}) → your final amount was: ${best_amount:,.2f}"
+    text = f"Maximum profit: If you buy on {buy_day} (start index={number_buy_day}), sell on {sell_day} (end index={number_sell_day}) → your final investment was: ${best_amount:,.2f}"
     plt.figtext(0.5, 0.01, text, ha="center")
 
     plt.xlabel("Date")
