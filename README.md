@@ -73,9 +73,12 @@ pip install yfinance matplotlib pandas
 
 To run the project, simply execute the `main.py` script:
 
+
 ## Output
 
 The output chart (`Figure_1.png`) displays:
 - Investment value trend from 2020 to 2024
 - Horizontal line for initial capital ($1,000)
 - Final amount and best weekday pair
+
+![Output Chart](Figure_1.png)
